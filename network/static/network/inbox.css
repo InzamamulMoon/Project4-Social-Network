@@ -1,0 +1,131 @@
+.new_post{
+  border-radius: 25px;
+  border: 2px solid;
+  padding: 25px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 700px;
+ /* height: fit-content;
+  overflow-wrap: break-word;
+  hyphens: auto;*/
+}
+.like-container {
+  display: flex;
+  align-items: center;
+}
+
+.like-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  outline: none;
+  color:grey;
+  /*transition: color 0.3s ease;*/
+  /*animation: change-color 0.3s paused;*/
+
+}
+
+.red-like-button{
+  transition: color 0.1s ease;
+  animation: change-color 0.1s paused;
+  color: red;
+}
+#container {
+  max-height: 0;            /* Start with a collapsed height */
+  opacity: 0;               /* Start invisible */
+  overflow: hidden;         /* Prevent content from spilling out */
+  transition: max-height 3s ease, opacity 2s ease; /* Smooth transition for height and opacity */
+  display: flex;            /* Apply flexbox properties */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+  /*display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-height: 45vh;*/
+
+  /*animation-name:tweet;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;*/
+  /*display: flex;
+  align-items: flex-start;   Start alignment at the top of the container 
+  height: 100vh;           
+  padding-left: 20px;      
+  flex-direction: column;  
+  height:fit-content;
+  width: fit-content;
+  display: contents;*/
+  /*display: flex;
+  align-items: center; 
+  height:50vh;
+  width:210vh;     
+  padding-left: 20px*/
+  
+}
+#container.active{
+  max-height: 45vh;
+  opacity: 1;
+}
+
+#post_button{
+margin-left: auto;}
+
+#title_New_Post{
+  text-align: center
+}
+
+#text{
+    /*width: 100%; 
+    height: 170px;
+    margin-top: 20px; 
+    display: block;
+    padding: 10px; 
+    box-sizing: border-box;*/
+  width: 600px;  
+  height: 150px;  
+  margin-top: 20px; 
+  display: block;
+}
+#submit_post{
+  margin-top: 10px;
+  margin-left: 545px; 
+}
+hr{
+  background-color: #333;  
+}
+
+/*@keyframes tweet{
+  0%{
+    opacity: 0;
+    max-height: 0vh; 
+    /*height: 0px;
+    line-height: 0px;
+    padding: 0px;
+    margin-bottom: 0px;*
+  }
+  75%{
+    opacity: 0;
+    /*height: 100%;
+    line-height: 100%;
+    padding: 20px;
+    margin-bottom: 10px;*
+    max-height: 34vh; 
+
+  }
+  100%{
+    opacity: 1;
+    /*height: 100%;
+    line-height: 100%;
+    padding: 20px;
+    margin-bottom: 10px;
+    display: flex;*
+    max-height: 45vh;
+  }
+}*/
